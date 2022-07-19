@@ -1,8 +1,9 @@
-<!doctype html>
-<html lang ="eng">
+<!DOCTYPE html>
+<html lang="eng">
 <head>
-
-<title>Calculator</title>
+<title> TextEditor</title>
+</head>
+<meta charset="utf-8">
 
 
 
@@ -13,36 +14,41 @@ function bold(){
 document.getElementId("textarea").style.fontWeight="bold";
 
 }
-function bold(){
+function italic(){
 document.getElementId("textarea").style.fontWeight="Italic";
 
 }
-function bold(){
-document.getElementId("textarea").style.fontWeight="Left";
+function left(){
+document.getElementId("textarea").style.textAlign="left";
 
 }
-function bold(){
-document.getElementId("textarea").style.fontWeight="Center";
+function center(){
+document.getElementId("textarea").style.textAlign="center";
 
 }
-function bold(){
-document.getElementId("textarea").style.fontWeight="Right";
+function right(){
+document.getElementId("textarea").style.textAlign="right";
 
 }
-function bold(){
-document.getElementId("textarea").style.fontWeight="UpperCase";
+function uppercase(){
+document.getElementId("textarea").style.textTransform="upperCase";
 
 }
-function bold(){
-document.getElementId("textarea").style.fontWeight="Lowercase";
+function lowercase(){
+document.getElementId("textarea").style.textTransform="lowercase";
 
 }
-function bold(){
-document.getElementId("textarea").style.fontWeight="Capitalize";
+function capitalize(){
+document.getElementId("textarea").style.textTransform="capitalize";
 
 }
-function bold(){
-document.getElementId("textarea").style.fontWeight="cleartext";
+function clean(){
+    document.getElementById("textarea").value="";
+    document.getElementById("textarea").style.fontWeight = "normal";
+    document.getElementById("textarea").style.textAlign = "left";
+    document.getElementById("textarea").style.fontStyle = "normal";
+    document.getElementById("textarea").style.textTransform = "none";
+    
 
 }
   
@@ -56,15 +62,15 @@ document.getElementId("textarea").style.fontWeight="cleartext";
 
 <div>
 
-<button onclick="Bold()">Bold</button>
-<button onclick="Italic()">Italic</button>
-<button onclick="Left()">Left</button>
-<button onclick="Center()">Center</button>
-<button onclick="Right()">Right</button>
-<button onclick="UpperCase()">Uppercase</button>
-<button onclick="Lowercase()">Lowercase</button>
-<button onclick="Capitalize()">Capitalize</button>
-<button onclick="cleartext()">cleartext</button>
+<button onclick="bold()">bold</button>
+<button onclick="italic()">italic</button>
+<button onclick="left()">left</button>
+<button onclick="center()">center</button>
+<button onclick="right()">right</button>
+<button onclick="upperCase()">uppercase</button>
+<button onclick="lowercase()">lowercase</button>
+<button onclick="capitalize()">capitalize</button>
+<button onclick="clean()">clear</button>
 
 
 </div>
