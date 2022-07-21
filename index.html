@@ -1,48 +1,40 @@
 <!DOCTYPE html>
 <html lang="eng">
 <head>
-<title> TextEditor</title>
-</head>
-<meta charset="utf-8">
-
-
-
-
-
-<script>
+ <script>
 function bold(){
-document.getElementId("textarea").style.fontWeight="bold";
+document.getElementById("textarea").style.fontWeight="bold";
 
 }
 function italic(){
-document.getElementId("textarea").style.fontWeight="Italic";
+document.getElementById("textarea").style.fontStyle="italic";
 
 }
 function left(){
-document.getElementId("textarea").style.textAlign="left";
+document.getElementById("textarea").style.textAlign="left";
 
 }
 function center(){
-document.getElementId("textarea").style.textAlign="center";
+document.getElementById("textarea").style.textAlign="center";
 
 }
 function right(){
-document.getElementId("textarea").style.textAlign="right";
+document.getElementById("textarea").style.textAlign="right";
 
 }
 function uppercase(){
-document.getElementId("textarea").style.textTransform="upperCase";
+document.getElementById("textarea").style.textTransform="upperCase";
 
 }
 function lowercase(){
-document.getElementId("textarea").style.textTransform="lowercase";
+document.getElementById("textarea").style.textTransform="lowercase";
 
 }
 function capitalize(){
-document.getElementId("textarea").style.textTransform="capitalize";
+document.getElementById("textarea").style.textTransform="capitalize";
 
 }
-function clean(){
+function cleartext(){
     document.getElementById("textarea").value="";
     document.getElementById("textarea").style.fontWeight = "normal";
     document.getElementById("textarea").style.textAlign = "left";
@@ -53,10 +45,11 @@ function clean(){
 }
   
 </script>
+
     </head>
     <body>
 
-<h1>
+<h1 >
   TEXT EDITOR  
 </h1>
 
@@ -67,16 +60,16 @@ function clean(){
 <button onclick="left()">left</button>
 <button onclick="center()">center</button>
 <button onclick="right()">right</button>
-<button onclick="upperCase()">uppercase</button>
+<button onclick="uppercase()">uppercase</button>
 <button onclick="lowercase()">lowercase</button>
 <button onclick="capitalize()">capitalize</button>
-<button onclick="clean()">clear</button>
+<button onclick="cleartext()">cleartext</button>
 
 
 </div>
-
-<textarea></textarea>
-
+<div>
+<textarea  id="textarea" cols="50" rows="15"></textarea>
+</div>
 </body>
     
  </html>
